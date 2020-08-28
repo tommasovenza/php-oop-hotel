@@ -15,6 +15,14 @@ class Stanza {
         $this->room_number = $_room_number;
         $this->floor = $_floor;
     }
+
+    public function stampaStanza($_beds) {
+
+        // $this->beds = $beds;
+
+        echo 'id stanza: ' . $this->id . ' numero stanza: ' . $this->room_number 
+        . ' piano: ' . $this->floor . ' numero posti letto disponibili: ' . $_beds . '<br>';
+    }
 }
 
 $camera_del_vescovo = new Stanza(1, '101', 1);
